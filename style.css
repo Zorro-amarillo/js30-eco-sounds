@@ -1,4 +1,10 @@
+@font-face {
+    font-family: Roboto;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
 body {
+    font-family: 'Roboto';
     background-color: black;
     margin: 0;
 }
@@ -14,3 +20,41 @@ body {
     background-repeat: no-repeat;
     background-position: center 0;
 }
+
+/* Header styles start */
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* Header styles end */
+
+/* Main styles start */
+
+/* Main styles end */
+
+/* Footer styles start */
+
+/* Footer styles end */
