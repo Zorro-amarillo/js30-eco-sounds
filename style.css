@@ -16,9 +16,11 @@ body {
 }
 
 .main-container {
-    background: url('assets/img/forest.jpg');
+    background-image: url('assets/img/forest.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
+    height: calc(100vh - 120px);
+    background-size: cover;
 }
 
 /* Header styles start */
@@ -27,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5px 40px;
+    padding: 0 70px;
 }
 
 .logo {
@@ -53,8 +55,23 @@ body {
 
 /* Main styles start */
 
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.play-btn {
+    margin: auto auto;
+    width: 160px;
+    height: 160px;
+}
+
 /* Main styles end */
 
 /* Footer styles start */
+
+.footer-container {
+    padding: 0 70px;
+}
 
 /* Footer styles end */
