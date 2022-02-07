@@ -59,10 +59,20 @@ body {
     justify-content: center;
 }
 
-.play-btn {
+.button {
+    background: url('assets/svg/play.svg');
+    background-size: contain;
+    border: none;
     margin: auto auto;
     width: 160px;
     height: 160px;
+    transition: .3s;
+}
+
+.button.pause {
+    background: url('assets/svg/pause.svg');
+    background-size: contain;
+    transition: .3s;
 }
 
 /* Main styles end */
