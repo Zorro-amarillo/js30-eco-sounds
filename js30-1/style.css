@@ -135,3 +135,19 @@ body {
 }
 
 /* Footer styles end */
+
+/* Media styles start */
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Media styles end */
