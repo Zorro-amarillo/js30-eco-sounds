@@ -33,6 +33,12 @@ body {
 
 .logo {
     width: 50px;
+    transition: .3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 .nav-list {
@@ -48,6 +54,11 @@ body {
     text-decoration: none;
     font-size: 20px;
     color: white;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #BDAE82;
 }
 
 /* Header styles end */
@@ -73,6 +84,11 @@ body {
     background: url('assets/svg/pause.svg');
     background-size: contain;
     transition: .3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
 }
 
 /* Main styles end */
@@ -101,11 +117,21 @@ body {
 .footer-gh-link {
     text-decoration: none;
     color: white;
+    transition: .3s;
+}
+
+.footer-gh-link:hover {
+    color: #BDAE82;
 }
 
 .footer-rss {
     width: 135px;
     height: 50px;
+    transition: .3s;
+}
+
+.rss-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 /* Footer styles end */
