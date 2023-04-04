@@ -1,0 +1,21 @@
+body {
+    background-color: #FFEFD5;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1200px;
+    height: 1200px;
+}
+
+.front-cover {
+    position: absolute;
+}
+
+.back-cover {
+    position: relative;
+}

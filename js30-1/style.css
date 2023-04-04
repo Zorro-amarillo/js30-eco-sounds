@@ -68,6 +68,7 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
+    background: url("assets/img/bird_00.jpg");
 }
 
 .button {
