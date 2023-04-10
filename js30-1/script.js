@@ -8,8 +8,6 @@ const bgImage = document.querySelector('.main-container'),
 
 let isPlay = false;
 
-// bgImage.style.backgroundImage = `url("assets/img/bird_00.jpg")`;
-
 function playMusic(audioTracks, i = 5) {
     audioTracks[i].play();
     isPlay = true;
@@ -52,9 +50,17 @@ function changeClass() {
     });
 }
 
-playBtn.addEventListener('click', (event) => {
+playBtn.addEventListener('click', () => {
     if (!isPlay) {
-        playMusic(songs);
+        if (logo.classList.contains('logo_active')) {
+            playMusic(songs);
+        } else {
+            navLinks.forEach((url, index) => {
+                if (url.classList.contains('nav-link_active')) {
+                    playMusic(songs, index);
+                }
+            });
+        }
     } else {
         stopMusic();
     }
