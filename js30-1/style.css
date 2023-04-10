@@ -36,7 +36,8 @@ body {
     transition: .3s;
 }
 
-.logo:hover {
+.logo:hover,
+.logo_active {
     cursor: pointer;
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
@@ -57,7 +58,8 @@ body {
     transition: .3s;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link_active {
     color: #BDAE82;
 }
 

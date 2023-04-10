@@ -1,4 +1,5 @@
 const bgImage = document.querySelector('.main-container'),
+      header = document.querySelector('.header-container'),
       logo = document.querySelector('.logo'),
       playBtn = document.querySelector('.button'),
       songs = document.querySelectorAll('.audio'),
@@ -35,6 +36,22 @@ function changePlayBtn() {
     console.log(`isPlay ${isPlay}`);
 }
 
+function changeClass() {
+    logo.classList.remove('logo_active');
+
+    navLinks.forEach(item => {
+        item.classList.remove('nav-link_active');
+    });
+
+    header.addEventListener('click', (event) => {
+        if (event.target && event.target == logo) {
+            logo.classList.add('logo_active');
+        } else if (event.target && event.target.classList.contains('nav-link')) {
+            event.target.classList.add('nav-link_active');
+        }
+    });
+}
+
 playBtn.addEventListener('click', (event) => {
     if (!isPlay) {
         playMusic(songs);
@@ -44,6 +61,8 @@ playBtn.addEventListener('click', (event) => {
 });
 
 navList.addEventListener('click', (event) => {
+    changeClass();
+
     if (event.target && event.target.classList.contains('nav-link')) {
         navLinks.forEach((link, i) => {
             if (event.target == link) {
@@ -56,6 +75,7 @@ navList.addEventListener('click', (event) => {
 });
 
 logo.addEventListener('click', () => {
+    changeClass();
     bgImage.style.backgroundImage = `url("assets/img/bird_00.jpg")`;
     stopMusic();
     playMusic(songs);
