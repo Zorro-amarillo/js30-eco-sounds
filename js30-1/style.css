@@ -15,20 +15,12 @@ body {
     padding: 0 20px;
 }
 
-.main-container {
-    background-image: url('assets/img/forest.jpg');
-    background-repeat: no-repeat;
-    background-position: center 0;
-    height: calc(100vh - 120px);
-    background-size: cover;
-}
-
 /* Header styles start */
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 70px;
+    padding: 0 40px;
 }
 
 .logo {
@@ -69,8 +61,10 @@ body {
 
 .main-container {
     display: flex;
-    justify-content: center;
-    background: url("assets/img/bird_00.jpg");
+    background-image: url('assets/img/bird_00.jpg');
+    background-position: center 0;
+    height: calc(100vh - 120px);
+    background-size: cover;
 }
 
 .button {
@@ -102,7 +96,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 70px;
+    padding: 0 40px;
     font-size: 20px;
 }
 
