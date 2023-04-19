@@ -144,9 +144,35 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav-link,
+    .footer-c-item,
+    .footer-gh-link {
+        font-size: 18px;
+    }
+
+    .footer-rss {
+        width: 120px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
+    }
+
+    .nav-link,
+    .footer-c-item,
+    .footer-gh-link {
+        font-size: 16px;
+    }
+
+    .footer-rss {
+        width: 100px;
     }
 }
 
