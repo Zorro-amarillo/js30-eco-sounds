@@ -28,10 +28,13 @@ body {
     transition: .3s;
 }
 
-.logo:hover,
 .logo_active {
     cursor: pointer;
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.logo_active:hover {
+    filter: none;
 }
 
 .nav-list {
