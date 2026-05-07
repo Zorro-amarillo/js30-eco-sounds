@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Roboto;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles start */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo {
+    width: 50px;
+    transition: .3s;
+}
+
+.logo_active {
+    cursor: pointer;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.logo_active:hover {
+    filter: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link_active {
+    color: #BDAE82;
+}
+
+/* Header styles end */
+
+/* Main styles start */
+
+.main-container {
+    display: flex;
+    background-image: url('assets/img/bird_00.jpg');
+    background-position: center 0;
+    height: calc(100vh - 120px);
+    background-size: cover;
+}
+
+.button {
+    background: url('assets/svg/play.svg');
+    background-size: contain;
+    border: none;
+    margin: auto auto;
+    width: 160px;
+    height: 160px;
+    transition: .3s;
+}
+
+.button.pause {
+    background: url('assets/svg/pause.svg');
+    background-size: contain;
+    transition: .3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+/* Main styles end */
+
+/* Footer styles start */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-c-item {
+    display: inline-block;
+    color: white;
+}
+
+.footer-gh-link {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.footer-gh-link:hover {
+    color: #BDAE82;
+}
+
+.footer-rss {
+    width: 135px;
+    height: 50px;
+    transition: .3s;
+}
+
+.rss-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+/* Footer styles end */
+
+/* Media styles start */
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav-link,
+    .footer-c-item,
+    .footer-gh-link {
+        font-size: 18px;
+    }
+
+    .footer-rss {
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .nav-link,
+    .footer-c-item,
+    .footer-gh-link {
+        font-size: 16px;
+    }
+
+    .footer-rss {
+        width: 100px;
+    }
+}
+
+/* Media styles end */
